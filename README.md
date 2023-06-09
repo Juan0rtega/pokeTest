@@ -2,6 +2,8 @@
 
 This repository contains a Salesforce Lightning Web Component (LWC) that interfaces with the PokeAPI to fetch and display a list of Pokémon.
 
+After finishing the development, create a PR to make an evaluation. 
+
 ## Prerequisites
 1. Salesforce DX
 2. Salesforce Org
