@@ -1,18 +1,48 @@
-# Salesforce DX Project: Next Steps
+# Salesforce LWC PokeAPI Integration
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This repository contains a Salesforce Lightning Web Component (LWC) that interfaces with the PokeAPI to fetch and display a list of Pokémon.
 
-## How Do You Plan to Deploy Your Changes?
+## Prerequisites
+1. Salesforce DX
+2. Salesforce Org
+3. Git
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Installation
 
-## Configure Your Salesforce DX Project
+Follow these steps to set up the project:
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+1. Clone the repository:
+```
+git clone <repository url>
+```
+2. Authorize your Salesforce org and provide it with an alias:
+```
+sfdx force:auth:web:login -d -a <your-alias>
+```
+5. Push the code to your Salesforce org:
+```
+sfdx force:source:push
+```
+6. Open your Salesforce org:
+```
+sfdx force:org:open
+```
+After performing these steps, you should see the LWC component ready to be added to a Lightning page.
 
-## Read All About It
+## Usage
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+1. Navigate to a Lightning page where you want to display the Pokémon list.
+2. Click 'Edit Page'.
+3. From the Lightning components, find your custom component and drag it onto the page.
+4. Click 'Save' and then 'Activate' to enable the page.
+
+You should now see a list of Pokémon displayed on the page.
+
+## Testing
+If possible add Jest testing.
+
+## Future Enhancements
+
+- Add pagination to display more Pokémon.
+- Add a search function to filter Pokémon by name.
+- Display additional Pokémon details in a modal when a Pokémon name is clicked.
