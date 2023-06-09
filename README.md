@@ -19,11 +19,11 @@ git clone <repository url>
 ```
 sfdx force:auth:web:login -d -a <your-alias>
 ```
-5. Push the code to your Salesforce org:
+3. Push the code to your Salesforce org:
 ```
 sfdx force:source:push
 ```
-6. Open your Salesforce org:
+4. Open your Salesforce org:
 ```
 sfdx force:org:open
 ```
