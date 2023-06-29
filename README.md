@@ -15,7 +15,7 @@ Follow these steps to set up the project:
 
 1. Clone the repository:
 ```
-git clone <repository url>
+git clone https://pokeapi.co/api/v2/pokemon/
 ```
 2. Authorize your Salesforce org and provide it with an alias:
 ```
